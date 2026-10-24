@@ -1,0 +1,38 @@
+# 凭据与本地配置 —— 绝不提交
+.env
+.env.*
+!.env.example
+*.token
+*.secret
+config.local.*
+local.*.json
+mcp.json
+**/mcp.json
+
+# 临时与缓存
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.cache/
+tmp/
+*.log
+
+# 测试与内部文档（开发期资产，不进参赛仓库）
+tests/
+*_test.py
+test_*.py
+MAINTAINER.md
+
+# 分享图输出（用户自己的订单内容，不进版本库）
+out/
+
+# 本地验证产物（含真实地址、门店、Token 探活结果，绝不提交）
+.verify/
+
+# 编辑器与系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
